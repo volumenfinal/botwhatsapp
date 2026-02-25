@@ -1022,7 +1022,7 @@ async function consultarGuardian(codigoEmpleado, mesSeleccionado, anioSelecciona
         if (accionesInsegurasComoImplicadoSoftDrinks.length === 0 && accionesInsegurasComoImplicadoNoSoftDrinks.length === 0) {
             resultado += `✅ *¡FELICIDADES!* No tienes acciones inseguras reportadas como implicado en este período.\n\n`;
         } else if (accionesInsegurasComoImplicadoSoftDrinks.length === 0 && accionesInsegurasComoImplicadoNoSoftDrinks.length > 0) {
-            resultado += `✅ *Nota:* Tienes acciones inseguras como implicado, pero ninguna en el área SoftDrinks.\n\n`;
+            resultado += `✅ *¡FELICIDADES!* No tienes acciones inseguras reportadas como implicado en este período.\n\n`;
         }
         
         resultado += `⏰ *Consulta:* ${moment().tz(TIMEZONE).format('DD/MM/YYYY HH:mm')}\n`;
